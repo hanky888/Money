@@ -6,7 +6,7 @@ namespace Money.Models
     public class ApplicationDbContext : DbContext
     {
         private readonly IConfiguration _configuration;
-        public ApplicationDbContext() { }      
+        public ApplicationDbContext() { }       
         public ApplicationDbContext(IConfiguration configuration)
         {
             _configuration = configuration;

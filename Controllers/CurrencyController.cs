@@ -30,7 +30,8 @@ namespace Money.Controllers
         [HttpGet]
         public virtual async Task<ActionResult<IEnumerable<Currency>>> GetCurrencies()
         {
-            return await _context.Currency.ToListAsync();
+            var currencies = await _context.Currency.ToListAsync();
+            return Ok(currencies);
         }
 
         // GET: api/Currency/1
